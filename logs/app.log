@@ -1,0 +1,17 @@
+Sendanemail(V2)_Subject:
+route MYE584
+
+Createfile_FileName:
+marsrutas
+
+Sendanemail(V2)_AttachmentsName-1:
+marsrutas MYE584
+
+Getfilecontentusingpath_FilePath:
+/Shared Documents/LoctrakerTemplates/BW templatas/Oslo-Padborg(KingCrab)(1temp).txt
+
+
+/Shared Documents/MindaugasZ/LoctrakerTemplates/BW templatas/test.txt
+
+
+https://agrologistikauab.sharepoint.com/:f:/s/AgroRobotas/Eglyvnbrdi1Gofv1UC-B094BN4OQISbVRz5Gbswfi6E2DA?e=mtTLMY
