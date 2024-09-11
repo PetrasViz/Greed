@@ -9,10 +9,10 @@ function isLoggedIn() {
 function redirectToRolePage($role) {
     switch ($role) {
         case 'admin':
-            redirect('admin/index.php');
-            break;
         case 'guild_leader':
         case 'guild_advisor':
+            redirect('user/index.php'); // Redirect to the main page
+            break;
         case 'guild_member':
             redirect('user/index.php');
             break;

@@ -1,14 +1,13 @@
 <?php
-include('../includes/db.php');
-include('../includes/auction.php');
-
 session_start();
-if ($_SESSION['role'] !== 'admin') {
+include('../includes/functions.php');
+
+if (!isset($_SESSION['role']) || $_SESSION['role'] !== 'admin') {
+    // Redirect non-admins to the main page or show an error message
     redirect('../user/index.php');
 }
 
-$auctions = getActiveAuctions();
-foreach ($auctions as $auction) {
-    echo "<div>{$auction['item']} - Minimum Bid: {$auction['min_bid']}</div>";
-}
+// Display admin auctions page content
 ?>
+<h1>Manage Auctions</h1>
+<!-- Admin-specific content here -->
