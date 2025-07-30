@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block content %}
+<h1 class="title">Management</h1>
+<ul>
+  <li><a href="{{ url_for('manage_auctions') }}">Auctions Control</a></li>
+  <li><a href="{{ url_for('manage_events') }}">Events Control</a></li>
+  <li><a href="{{ url_for('register_event') }}">Register Event</a></li>
+  {% if current_user.role == 'admin' %}
+  <li><a href="{{ url_for('manage_users') }}">User Permissions</a></li>
+  {% endif %}
+</ul>
+{% endblock %}
